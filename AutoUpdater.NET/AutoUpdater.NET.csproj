@@ -11,16 +11,26 @@
         <Company>RBSoft</Company>
         <Product>AutoUpdater.NET</Product>
         <Copyright>Copyright © 2012-2022 RBSoft</Copyright>
+<<<<<<< HEAD
         <Version>1.7.4.0</Version>
         <AssemblyVersion>1.7.4.0</AssemblyVersion>
         <FileVersion>1.7.4.0</FileVersion>
+=======
+        <Version>1.7.2.0</Version>
+        <AssemblyVersion>1.7.2.0</AssemblyVersion>
+        <FileVersion>1.7.2.0</FileVersion>
+>>>>>>> parent of f90cc88 (Fixed an issue with WebView2 when changelog has linked files and basic authentication is enabled (#537))
         <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>AutoUpdater.NET.snk</AssemblyOriginatorKeyFile>
         <NeutralLanguage>en</NeutralLanguage>
         <PackageId>Autoupdater.NET.Official</PackageId>
         <IncludeSymbols>true</IncludeSymbols>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+<<<<<<< HEAD
         <PackageVersion>1.7.4.0</PackageVersion>
+=======
+        <PackageVersion>1.7.2.0</PackageVersion>
+>>>>>>> parent of f90cc88 (Fixed an issue with WebView2 when changelog has linked files and basic authentication is enabled (#537))
         <Title>AutoUpdater.NET</Title>
         <Authors>rbsoft</Authors>
         <Description>AutoUpdater.NET is a class library that allows .NET developers to easily add auto update functionality to their WinForms or WPF application projects.</Description>

@@ -2,7 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>Autoupdater.NET.Official</id>
+<<<<<<< HEAD
     <version>1.7.4.0</version>
+=======
+    <version>1.7.2.0</version>
+>>>>>>> parent of f90cc88 (Fixed an issue with WebView2 when changelog has linked files and basic authentication is enabled (#537))
     <title>AutoUpdater.NET</title>
     <authors>rbsoft</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

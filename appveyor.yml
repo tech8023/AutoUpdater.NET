@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 version: 1.7.4.{build}
 environment:
   my_version: 1.7.4
+=======
+version: 1.7.2.{build}
+environment:
+  my_version: 1.7.2
+>>>>>>> parent of f90cc88 (Fixed an issue with WebView2 when changelog has linked files and basic authentication is enabled (#537))
   my_secret:
     secure: vbPRaZLQYpGPr4BrZZ4p6TofpSZMud+FKtlpqjgO8aA=
 skip_branch_with_pr: true

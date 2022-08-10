@@ -89,21 +89,17 @@ namespace AutoUpdaterDotNET
             webView2.CoreWebView2.Settings.AreDefaultContextMenusEnabled = false;
             webView2.CoreWebView2.Settings.IsStatusBarEnabled = false;
             webView2.CoreWebView2.Settings.AreDevToolsEnabled = Debugger.IsAttached;
-            webView2.CoreWebView2.Settings.UserAgent = AutoUpdater.GetUserAgent();
-            webView2.CoreWebView2.Profile.ClearBrowsingDataAsync();
             webView2.Show();
             webView2.BringToFront();
             if (null != AutoUpdater.BasicAuthChangeLog)
             {
-                webView2.CoreWebView2.BasicAuthenticationRequested += delegate (
-                    object sender,
-                    CoreWebView2BasicAuthenticationRequestedEventArgs args)
-                    {
-                        args.Response.UserName = ((BasicAuthentication)AutoUpdater.BasicAuthChangeLog).Username;
-                        args.Response.Password = ((BasicAuthentication)AutoUpdater.BasicAuthChangeLog).Password;
-                    };
+                var resourceRequest = webView2.CoreWebView2.Environment.CreateWebResourceRequest(_args.ChangelogURL, "GET", Stream.Null, $"Authorization: {AutoUpdater.BasicAuthChangeLog}");
+                webView2.CoreWebView2.NavigateWithWebResourceRequest(resourceRequest);
             }
-            webView2.CoreWebView2.Navigate(_args.ChangelogURL);
+            else
+            {
+                webView2.CoreWebView2.Navigate(_args.ChangelogURL);
+            }
         }
 
         private void UseLatestIE()

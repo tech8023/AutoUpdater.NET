@@ -9,9 +9,15 @@ namespace AutoUpdaterDotNET
     /// </summary>
     public class BasicAuthentication : IAuthentication
     {
+<<<<<<< HEAD
         internal string Username { get; }
 
         internal string Password { get; }
+=======
+        private string Username { get; }
+
+        private string Password { get; }
+>>>>>>> parent of f90cc88 (Fixed an issue with WebView2 when changelog has linked files and basic authentication is enabled (#537))
 
         /// <summary>
         ///     Initializes credentials for Basic Authentication.
